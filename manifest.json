@@ -1,0 +1,21 @@
+{
+    "name": "Vini's YT Tools",
+    "description": "Some tools to improve YT Music experience",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "/img/icon128Px.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://music.youtube.com/*"
+            ],
+            "js": [
+                "/src/ytmAutoContinue.js",
+                "/src/temp.js"
+            ]
+        }
+    ]
+}
